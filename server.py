@@ -19,8 +19,6 @@ from openai import OpenAI
 from typing import List
 
 import streamlit as st
-import numpy as np
-import time
 import os
 
 

@@ -1,0 +1,31 @@
+numpy
+pandas
+opencv-python
+scikit-learn
+matplotlib
+seaborn
+tqdm
+
+transformers
+accelerate
+
+langchain
+langchain_openai
+langchain_community
+langchainhub
+sentence_transformers
+# faiss-cpu
+chromadb
+pypdf
+unstructured
+
+langserve
+fastapi
+uvicorn
+sse_starlette
+pydantic==1.10.13
+streamlit
+
+jupyter
+
+# pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121

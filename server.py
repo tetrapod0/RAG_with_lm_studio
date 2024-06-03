@@ -135,11 +135,9 @@ for msg in st.session_state['messages']:
 
 # 유저 입력
 if user_input := st.chat_input():
-    retrieve_flag = user_input[0] == '!'
-        
     st.session_state['messages'].append(ChatMessage(role='user', content=user_input))
     st.chat_message('user').write(user_input)
-    if retrieve_flag: user_input = user_input[1:]
+    if retrieve_flag := user_input[0] == '!': user_input = user_input[1:]
     
     if file and retrieve_flag:
         format_docs = lambda docs:"\n\n".join(doc.page_content for doc in docs)
